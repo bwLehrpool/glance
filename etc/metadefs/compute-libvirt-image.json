@@ -90,6 +90,24 @@
             "type": "integer",
             "minimum": 0
         },
+        "hw_video_ram_bar1": {
+            "title": "Max Video Ram for Primary Bar",
+            "description": "Maximum RAM (unit: MB) for the primary bar of a QXL video adapter. Used only if a hw_video:ram_bar1_max_mb value has been set in the flavor's extra_specs and that value is higher than the value set in hw_video_ram_bar1.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "hw_video_ram_bar2_ext": {
+            "title": "Max Video Ram for Secondary Bar Extension (64 bit)",
+            "description": "Maximum RAM (unit: MB) for the secondary bar extension (64 bit) of a QXL video adapter. Used only if a hw_video:ram_bar2_ext_max_mb value has been set in the flavor's extra_specs and that value is higher than the value set in hw_video_ram_bar2_ext.",
+            "type": "integer",
+            "minimum": 0
+        },
+        "hw_video_ram_vga": {
+            "title": "Max Video Ram for VGA framebuffer",
+            "description": "Maximum RAM (unit: MB) for the VGA framebuffer of a QXL video adapter. Used only if a hw_video:ram_vga_max_mb value has been set in the flavor's extra_specs and that value is higher than the value set in hw_video_ram_vga.",
+            "type": "integer",
+            "minimum": 0
+        },
         "os_command_line": {
             "title": "Kernel Command Line",
             "description": "The kernel command line to be used by the libvirt driver, instead of the default. For linux containers (LXC), the value is used as arguments for initialization. This key is valid only for Amazon kernel, ramdisk, or machine images (aki, ari, or ami).",
