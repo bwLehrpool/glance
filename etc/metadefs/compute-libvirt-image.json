@@ -84,6 +84,12 @@
                 "bochs"
             ]
         },
+        "hw_video_screens": {
+            "title": "Number of Screens",
+            "description": "The number of screens of a graphic device presented to the guest.",
+            "type": "integer",
+            "minimum": 1
+        },
         "hw_video_ram": {
             "title": "Max Video Ram",
             "description": "Maximum RAM (unit: MB) for the video image. Used only if a hw_video:ram_max_mb value has been set in the flavor's extra_specs and that value is higher than the value set in hw_video_ram.",
